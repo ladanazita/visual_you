@@ -27,6 +27,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+#carrier wave for image uploads
+gem 'carrierwave', '0.10.0'
+#helps with resizing
+gem 'mini_magick', '3.8.0'
+#fog helps to upload to s3
+gem 'fog','1.23.0'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
