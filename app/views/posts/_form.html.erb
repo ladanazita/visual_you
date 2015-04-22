@@ -1,16 +1,10 @@
-<%= form_for @post do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
-
-  <p>
-    <%= f.label :picture %><br>
-    <%= f.text_field :picture %>
-  </p>
-
-  <p>
-    <%= f.submit %>
-  </p>
+<%= form_for (@post, html: {multipart: true}) do |f| %>
+  <div class='field'>
+    <%= f.text_area :title, placeholder: "Compose new post..." %>
+    <span>
+      <%= f.file_field :picture %>
+    </span>
+    <%= f.submit "Post" %>
+  </div>
 <% end %>
 
