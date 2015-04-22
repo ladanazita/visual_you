@@ -4,13 +4,14 @@ Rails.application.routes.draw do
 
   end
 
-  get 'posts/index' => 'posts#index'
-  get 'posts/new' => 'posts#new'
-  post 'posts' => 'posts#create'
-  get 'posts/:id/edit' => 'posts#edit'
-  patch 'posts/:id' => 'posts#update'
-  delete 'posts/:id' => 'posts#destroy'
-  get 'posts/:id' => 'posts#show'
+  get 'welcome/about' => 'welcome#about'
+  # get 'posts/index' => 'posts#index'
+  # get 'posts/new' => 'posts#new'
+  # post 'posts' => 'posts#create'
+  # get 'posts/:id/edit' => 'posts#edit'
+  # patch 'posts/:id' => 'posts#update'
+  # delete 'posts/:id' => 'posts#destroy'
+  # get 'posts/:id' => 'posts#show'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
