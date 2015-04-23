@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   get 'welcome/about' => 'welcome#about'
   # get 'posts/index' => 'posts#index'
+  #
+  #
+  #
   # get 'posts/new' => 'posts#new'
   # post 'posts' => 'posts#create'
   # get 'posts/:id/edit' => 'posts#edit'
