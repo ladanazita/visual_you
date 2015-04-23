@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>VisualYou</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>VisualYou</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+  <%= yield %>
+  <ul class="list-inline">
+    <% if current_user %>
+      <li>Signed in as<strong><%=current_user.name%></strong></li>
+      <li><%= link_to "Logout", '/logout' %></li>
+    <% else %>
+      <li><%= link_to "Login", '/login' %></li>
+      <li><%= link_to 'Sign Up', '/signup' %></li>
+    <%end%>
+  </ul>
+  </body>
 </html>
