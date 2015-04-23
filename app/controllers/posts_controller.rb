@@ -32,6 +32,7 @@ class PostsController < ApplicationController
       render 'edit'
     end
   end
+
   def destroy
     @post = Post.find(params[:id])
     @post.destroy
@@ -40,6 +41,6 @@ class PostsController < ApplicationController
 
   private
     def post_params
-        params.require(:title).permit(:picture)
+        params.require(:post).permit(:title, :picture)
     end
 end
