@@ -34,7 +34,8 @@ gem 'carrierwave', '0.10.0'
 gem 'mini_magick', '3.8.0'
 #fog helps to upload to s3
 gem 'fog','1.23.0'
-
+#hide proprietary info
+gem 'figaro'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

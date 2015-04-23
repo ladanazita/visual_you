@@ -1,7 +1,7 @@
 <h1>Posts</h1>
 <div>
   <div><%= @post.title %></div>
-  <div><%= @post.picture %></div>
+  <%= image_tag @post.picture.url %>
 </div>
 <div>
 <%= render @post.comments %>

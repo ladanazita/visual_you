@@ -3,16 +3,8 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-  def show
-    @post = Post.find(params[:id])
-  end
-
   def new
     @post = Post.new
-  end
-
-  def edit
-    @post = Post.find(params[:id])
   end
 
   def create
@@ -24,6 +16,14 @@ class PostsController < ApplicationController
     end
   end
 
+  def show
+    @post = Post.find(params[:id])
+  end
+
+  def edit
+    @post = Post.find(params[:id])
+  end
+
   def update
     @post = Post.find(params[:id])
     if @post.update(post_params)
@@ -32,6 +32,7 @@ class PostsController < ApplicationController
       render 'edit'
     end
   end
+
   def destroy
     @post = Post.find(params[:id])
     @post.destroy
@@ -40,6 +41,6 @@ class PostsController < ApplicationController
 
   private
     def post_params
-        params.require(:post).permit(:title)
+        params.require(:post).permit(:title, :picture)
     end
 end
