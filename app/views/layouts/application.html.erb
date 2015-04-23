@@ -12,6 +12,8 @@
     <% if current_user %>
       <li>Signed in as<strong><%=current_user.name%></strong></li>
       <li><%= link_to "Logout", '/logout' %></li>
+    <% elsif current_user && current_user.admin? %>
+      <li>Signed in as Admin</li>
     <% else %>
       <li><%= link_to "Login", '/login' %></li>
       <li><%= link_to 'Sign Up', '/signup' %></li>
