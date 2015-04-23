@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
-  before_action :require_user
-  before_action :require_admin, only [:destroy]
+  # before_action :require_user
+  # before_action :require_admin, only [:destroy]
 
   def create
     @post = Post.find(params[:post_id])
