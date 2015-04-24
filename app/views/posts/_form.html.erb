@@ -3,9 +3,8 @@
     <%= f.text_field :title, placeholder: "Create board..." %>
     <span>
       <%= f.file_field :picture %>
-      <%= f.hidden_field :user_id, current_user.id %>
+      <%= f.hidden_field :user_id, value: current_user.id %>
     </span>
     <%= f.submit "Board" %>
   </div>
 <%end%>
-

@@ -5,13 +5,16 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to('posts/index')
+      session[:user_id] = @user.id
+      redirect_to("/users/#{@user.id}")
     else
       redirect_to('/signup')
     end
   end
   def show
-    @user = User.find(current_user.id)
+    @user = User.find(params[:id])
+    @post = Post.new
+    @posts=@user.posts
   end
 
   private

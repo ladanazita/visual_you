@@ -1,0 +1,9 @@
+<h1> Welcome <%= current_user.name %> </h1>
+
+<h2> <%= link_to 'Create a new post', new_post_path %> Board </h2>
+<%= @posts.each do |p| %>
+<div>
+  <%= p.title %>
+  <%= image_tag p.picture.url %>
+</div>
+<% end %>
