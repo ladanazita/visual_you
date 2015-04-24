@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to('/about')
     else
-      redirect_to('/')
+      redirect_to('/users/:id')
     end
   end
 

@@ -10,6 +10,9 @@ class UsersController < ApplicationController
       redirect_to('/signup')
     end
   end
+  def show
+    @user = User.find(current_user.id)
+  end
 
   private
     def user_params
