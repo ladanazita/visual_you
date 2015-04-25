@@ -3,6 +3,9 @@
     <div class="row">
       <div class="col-md-7">
         <h1> Login </h1>
+        <% if flash[:error] %>
+          <div class="flash-error"><%= flash[:error]%></div>
+        <% end %>
         <%= form_tag('/login', method: :post) do %>
           <div class='form-group'>
            <p> Email:<%= text_field_tag :email%></p>
