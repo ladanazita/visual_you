@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>VisualYou</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
+
   <body>
     <ul class="list-inline">
       <% if current_user %>
         <li>Signed in as<strong><%=current_user.name%></strong></li>
+        <li><%= link_to 'My Board', user_path(current_user) %></li>
         <li><%= link_to "Logout", '/logout' %></li>
       <% elsif current_user && current_user.admin? %>
         <li>Signed in as Admin</li>
       <% else %>
-        <li><%= link_to "Login", '/login' %></li>
-        <li><%= link_to 'Sign Up', '/signup' %></li>
+        <div class="modal">
+          <label for="modal-1">
+            <div class="modal-trigger"> Login
+            </div>
+          </label>
+          <input class="modal-state" id="modal-1" type="checkbox" />
+            <%= render 'layouts/login_modal' %>
+        </div>
+
+        <div class="modal">
+          <label for="modal-2">
+            <div class="modal-trigger"> Signup </div>
+          </label>
+          <input class="modal-state" id="modal-2" type="checkbox" />
+            <%= render 'layouts/signup_modal' %>
+        </div>
+
       <%end%>
-<%= yield %>
-  </ul>
+    </ul>
+
+    <%= yield %>
   </body>
 </html>
