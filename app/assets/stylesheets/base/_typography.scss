@@ -3,7 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: $base-font-color;
   font-family: 'Monoton', cursive;
-  font-size: 20px;
+  font-size: 12px;
   line-height: $base-line-height;
 }
 
@@ -14,14 +14,14 @@ h4,
 h5,
 h6 {
   font-family: 'Monoton', cursive;
-  font-size: 20px;
+  font-size: 12px;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
 
 p {
   margin: 0 0 $small-spacing;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 a {
