@@ -27,15 +27,15 @@ html, body {
   $action-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $footer-background: desaturate(darken($action-color, 20%), 30%);
+  $footer-background: desaturate(lighten($action-color, 20%), 30%);
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
-
+  bottom: 0;
+  position: fixed;
   background: $footer-background;
   padding: $base-spacing;
   width: 100%;
-  display: inline-block;
 
   .footer-logo {
     margin-right: 1em;
