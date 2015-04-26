@@ -1,6 +1,8 @@
-<h1>About Visual You</h1>
-<p>A space to upload images that inspire you. Save them for later use. Come back and create mood boards for creative projects!</p>
-
-<div><%= image_tag @randompic %></div>
-
+<div class="side-image">
+  <div class="images-wrapper"><p><%= image_tag @randompic %></p></div>
+    <div class="side-image-content">
+      <h4>About Visual You</h4>
+      <p>A space to upload images that inspire you. Save them for later use. Come back and create mood boards for creative projects!</p>
+  </div>
+</div>
 <%= link_to 'Back', '/' %>

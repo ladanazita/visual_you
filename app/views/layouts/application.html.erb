@@ -9,34 +9,25 @@
   </head>
 
   <body>
-    <ul class="list-inline">
-      <% if current_user %>
-        <li>Signed in as<strong><%=current_user.name%></strong></li>
-        <li><%= link_to 'My Board', user_path(current_user) %></li>
-        <li><%= link_to "Logout", '/logout' %></li>
-      <% elsif current_user && current_user.admin? %>
-        <li>Signed in as Admin</li>
-      <% else %>
-        <div class="modal">
-          <label for="modal-1">
-            <div class="modal-trigger"> Login
-            </div>
-          </label>
-          <input class="modal-state" id="modal-1" type="checkbox" />
-            <%= render 'layouts/login_modal' %>
-        </div>
-
-        <div class="modal">
-          <label for="modal-2">
-            <div class="modal-trigger"> Signup </div>
-          </label>
-          <input class="modal-state" id="modal-2" type="checkbox" />
-            <%= render 'layouts/signup_modal' %>
-        </div>
-
-      <%end%>
-    </ul>
 
     <%= yield %>
+<footer class="footer-2" role="contentinfo">
+  <div class="footer-logo">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+  </div>
+  <ul>
+    <% if current_user %>
+      <li class="nav-link">Signed in as <strong><%=current_user.name%></strong></li>
+      <li class="nav-link"><%= link_to 'My Board', user_path(current_user) %></li>
+      <li class="nav-link"><%= link_to "Logout", '/logout' %></li>
+      <li class="nav-link"><%= link_to 'Take a look at other boards', controller: 'posts' %></li>
+    <% elsif current_user && current_user.admin? %>
+      <li>Signed in as Admin</li>
+    <% else %>
+      <li class="nav-link"><%= link_to "Login", login_path %></li>
+      <li class="nav-link"><%= link_to "Signup", signup_path %></li>
+    <%end%>
+  </ul>
+</footer>
   </body>
 </html>
