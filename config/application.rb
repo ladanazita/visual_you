@@ -12,19 +12,7 @@ module VisualYou
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     # config/application.rb
-    config.assets.precompile += [
-      'application.scss'
-      'comments.scss'
-      'flash.scss'
-      'footer.scss'
-      'griditem.scss'
-      'index.scss'
-      'posts.scss'
-      'scroll.scss'
-      'sessions.scss'
-      'show.scss'
-      'users.scss'
-    ]
+    #
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
