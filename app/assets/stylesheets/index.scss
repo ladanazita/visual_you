@@ -23,7 +23,7 @@
   }
 
   .copy {
-    @include transform(translate(-50%, -50%));
+    @include (translate(-50%, -50%));
     left: 50%;
     margin: auto;
     position: absolute;
