@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_action :require_user, except: [:index, :show]
   def index
     @posts = Post.all
+    @randompic= Post.offset(rand(Post.count)).first.picture.url
   end
 
   def new

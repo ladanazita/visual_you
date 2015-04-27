@@ -2,8 +2,8 @@ body {
   @include font-feature-settings("kern", "liga", "pnum");
   -webkit-font-smoothing: antialiased;
   color: $base-font-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: 'Monoton', cursive;
+  font-size: 12px;
   line-height: $base-line-height;
 }
 
@@ -13,18 +13,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
-  font-size: $base-font-size;
+  font-family: 'Monoton', cursive;
+  font-size: 12px;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
 
 p {
   margin: 0 0 $small-spacing;
+  font-size: 20px;
 }
 
 a {
-  color: $action-color;
+  color: #ffc7d1;
   text-decoration: none;
   transition: color 0.1s linear;
 

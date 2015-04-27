@@ -1,13 +1,27 @@
 <h1> Welcome <%= current_user.name %> </h1>
 
 <h2> <%= link_to 'Create new', new_post_path %> Board </h2>
-<h2> <%= link_to 'Edit', edit_post_path %> Board </h2>
+  <section>
+    <% @posts.each do |post| %>
+      <aside>
+        <%= link_to 'Show', post_path(post) %>
+        <%= link_to 'Edit', edit_post_path(post) %>
+        <% if current_user || current_user.admin? %>
+        <%= link_to 'Destroy', post_path(post),
+                method: :delete,
+                data: {confirm: 'Are you sure?'} %>
+        <%end%>
+      </aside>
+      <aside>
+        <%= render @post.comments %>
+      </aside>
+      <article>
+        <%= post.title %>
+        <%= image_tag post.picture.url if post.picture? %>
+      </article>
+    <% end %>
+  </section>
 
-<%= @posts.each do |p| %>
-<div>
-  <%= p.title %>
-  <%= image_tag p.picture.url %>
-</div>
-<% end %>
+  <%= link_to 'New Post', new_post_path %>
 
-<%= link_to 'Take a look at other boards', controller: 'posts' %>
+
