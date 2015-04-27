@@ -1,0 +1,840 @@
+/* line 4, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* line 1, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_buttons.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"],
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: #477dca;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* line 21, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_buttons.scss */
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
+button:hover,
+button:focus {
+  background-color: #2c5999;
+  color: #fff;
+}
+/* line 27, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_buttons.scss */
+button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* line 1, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+fieldset {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  margin: 0 0 0.75em;
+  padding: 1.5em;
+}
+
+/* line 8, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+}
+
+/* line 16, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+label {
+  font-weight: 600;
+  margin-bottom: 0.375em;
+}
+/* line 20, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+label.required::after {
+  content: "*";
+}
+/* line 24, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+label abbr {
+  display: none;
+}
+
+/* line 29, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
+select[multiple=multiple],
+textarea {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color;
+  width: 100%;
+}
+/* line 44, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
+select[multiple=multiple]:hover,
+textarea:hover {
+  border-color: #c4c4c4;
+}
+/* line 48, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
+select[multiple=multiple]:focus,
+textarea:focus {
+  border-color: #477dca;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+  outline: none;
+}
+
+/* line 55, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 59, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 63, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 69, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 74, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 1, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 20, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em;
+}
+/* line 23, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_lists.scss */
+dl dt {
+  font-weight: bold;
+  margin-top: 0.75em;
+}
+/* line 28, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 32, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_lists.scss */
+li.block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+/* line 89, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+li.block:last-child {
+  margin-right: 0;
+}
+/* line 78, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_omega.scss */
+li.block:nth-child(4n) {
+  margin-right: 0;
+}
+/* line 83, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_omega.scss */
+li.block:nth-child(4n+1) {
+  clear: left;
+}
+
+/* line 1, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_tables.scss */
+table {
+  -webkit-font-feature-settings: "kern", "liga", "tnum";
+  -moz-font-feature-settings: "kern", "liga", "tnum";
+  -ms-font-feature-settings: "kern", "liga", "tnum";
+  font-feature-settings: "kern", "liga", "tnum";
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 9, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 16, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0;
+}
+
+/* line 21, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 1, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: 'Monoton', cursive;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* line 10, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Monoton', cursive;
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 0 0 0.75em;
+}
+
+/* line 22, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+  font-size: 20px;
+}
+
+/* line 27, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_typography.scss */
+a {
+  color: #ffc7d1;
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+/* line 32, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_typography.scss */
+a:active, a:focus, a:hover {
+  color: #2c5999;
+}
+/* line 38, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_typography.scss */
+a:active, a:focus {
+  outline: none;
+}
+
+/* line 44, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0;
+}
+
+/* line 52, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 1, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/index.scss */
+.image-gradient-dynamic {
+  line-height: 0;
+  position: relative;
+  width: 100%;
+}
+/* line 17, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/index.scss */
+.image-gradient-dynamic img {
+  height: auto;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+/* line 25, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/index.scss */
+.image-gradient-dynamic .copy {
+  left: 50%;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  z-index: 999;
+}
+/* line 33, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/index.scss */
+.image-gradient-dynamic .copy p {
+  color: white;
+  font-weight: 800;
+  line-height: 1.5em;
+  padding: 1em 2em;
+  position: relative;
+}
+/* line 42, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/index.scss */
+.image-gradient-dynamic .overlay {
+  background-color: rgba(255, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(-270deg, rgba(255, 0, 0, 0.1), rgba(0, 128, 0, 0.4));
+  background-image: linear-gradient(0deg,rgba(255, 0, 0, 0.1), rgba(0, 128, 0, 0.4));
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+/* line 48, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/index.scss */
+.image-gradient-dynamic .overlay:after {
+  background-color: rgba(0, 128, 128, 0.2);
+  background-image: -webkit-linear-gradient(-360deg, rgba(0, 128, 128, 0.2), rgba(255, 255, 0, 0.2));
+  background-image: linear-gradient(90deg,rgba(0, 128, 128, 0.2), rgba(255, 255, 0, 0.2));
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: '';
+  display: block;
+}
+
+/* line 27, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-alert {
+  background-color: #fff6bf;
+  color: #8c7800;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  text-align: center;
+}
+/* line 16, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-alert a {
+  color: #594c00;
+  text-decoration: underline;
+}
+/* line 20, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-alert a:focus, .flash-alert a:hover {
+  color: black;
+}
+
+/* line 31, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-error {
+  background-color: #fbe3e4;
+  color: #96151b;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  text-align: center;
+}
+/* line 16, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-error a {
+  color: #6a0f13;
+  text-decoration: underline;
+}
+/* line 20, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-error a:focus, .flash-error a:hover {
+  color: #110203;
+}
+
+/* line 35, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-notice {
+  background-color: #e5edf8;
+  color: #244e87;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  text-align: center;
+}
+/* line 16, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-notice a {
+  color: #19375f;
+  text-decoration: underline;
+}
+/* line 20, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-notice a:focus, .flash-notice a:hover {
+  color: #04080e;
+}
+
+/* line 39, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-success {
+  background-color: #e6efc2;
+  color: #56651a;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  text-align: center;
+}
+/* line 16, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-success a {
+  color: #333c10;
+  text-decoration: underline;
+}
+/* line 20, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/flash.scss */
+.flash-success a:focus, .flash-success a:hover {
+  color: black;
+}
+
+/* line 1, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.wrapper-for-content-outside-of-footer {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+
+/* line 8, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.wrapper-for-content-outside-of-footer:after {
+  content: "";
+  display: block;
+}
+
+/* line 17, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2, .wrapper-for-content-outside-of-footer:after {
+  height: 17em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 17, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+  .footer-2, .wrapper-for-content-outside-of-footer:after {
+    height: 4em;
+  }
+}
+
+/* line 25, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 {
+  bottom: 0;
+  position: fixed;
+  background: #aab9cd;
+  padding: 1.5em;
+  width: 100%;
+}
+/* line 40, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 .footer-logo {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 40, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+  .footer-2 .footer-logo {
+    float: left;
+    margin-bottom: 0;
+  }
+}
+/* line 50, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 .footer-logo img {
+  height: 1.6em;
+}
+/* line 54, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 ul {
+  line-height: 1.5em;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 54, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+  .footer-2 ul {
+    float: left;
+    line-height: 1.8em;
+    margin-left: 1em;
+    margin-bottom: 0;
+  }
+}
+/* line 67, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 ul li {
+  font-weight: 800;
+  list-style: none;
+  padding-right: 1em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 67, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+  .footer-2 ul li {
+    display: inline;
+    text-align: left;
+  }
+}
+/* line 78, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 ul li a {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+/* line 82, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 ul li a:focus, .footer-2 ul li a:hover {
+  color: white;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 88, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+  .footer-2 .footer-secondary-links {
+    float: right;
+  }
+}
+/* line 93, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 .footer-secondary-links li {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+/* line 98, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 .footer-secondary-links ul.footer-social {
+  margin: 1em 0 0 0;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 98, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+  .footer-2 .footer-secondary-links ul.footer-social {
+    float: right;
+    margin-top: 0;
+  }
+}
+/* line 106, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 .footer-secondary-links ul.footer-social li {
+  font-size: 1em;
+  float: left;
+  line-height: 0;
+  margin: 0;
+  padding-right: 0.7em;
+}
+/* line 113, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 .footer-secondary-links ul.footer-social li:last-child {
+  padding-right: 0;
+}
+/* line 118, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 .footer-secondary-links ul.footer-social img {
+  height: 1.6em;
+  opacity: 0.7;
+  padding: 1px;
+}
+/* line 123, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/footer.scss */
+.footer-2 .footer-secondary-links ul.footer-social img:focus, .footer-2 .footer-secondary-links ul.footer-social img:hover {
+  opacity: 1;
+}
+
+/* line 1, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/comments.scss */
+.comment {
+  display: table;
+  width: 100%;
+}
+/* line 5, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/comments.scss */
+.comment .comment-image,
+.comment .comment-content {
+  display: table-cell;
+  vertical-align: top;
+}
+/* line 11, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/comments.scss */
+.comment .comment-image {
+  padding-right: 1.618em;
+}
+/* line 14, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/comments.scss */
+.comment .comment-image img {
+  height: 3em;
+  max-width: none;
+}
+/* line 19, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/comments.scss */
+.comment-reverse-order .comment .comment-image {
+  padding-left: 10px;
+  padding-right: 0;
+}
+/* line 25, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/comments.scss */
+.comment .comment-content {
+  width: 100%;
+}
+
+/* line 1, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/show.scss */
+section {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.2.2/app/assets/stylesheets/addons/_clearfix.scss */
+section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 3, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/show.scss */
+section aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+/* line 89, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section aside:last-child {
+  margin-right: 0;
+}
+/* line 4, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/show.scss */
+section article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+}
+/* line 89, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section article:last-child {
+  margin-right: 0;
+}
+
+/* line 20, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.2.2/app/assets/stylesheets/addons/_clearfix.scss */
+.grid-items::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 28, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #6b83a6;
+  border-bottom: 9px solid #fff;
+  border-left: 4.5px solid #fff;
+  border-right: 4.5px solid #fff;
+  border-top: 0;
+  cursor: pointer;
+  float: left;
+  height: 14em;
+  overflow: hidden;
+  outline: none;
+  padding: 2em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 28, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+  .grid-items .grid-item {
+    width: 33.33333%;
+  }
+}
+/* line 50, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(1) {
+  background-color: #6b83a6;
+  box-shadow: inset 0px 0px 1px 2px #536a8b;
+}
+/* line 55, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(1):focus, .grid-items .grid-item:nth-child(1):hover {
+  background-color: #536a8b;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 50, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(2) {
+  background-color: #3581A5;
+  box-shadow: inset 0px 0px 1px 2px #29637e;
+}
+/* line 55, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(2):focus, .grid-items .grid-item:nth-child(2):hover {
+  background-color: #29637e;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 50, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(3) {
+  background-color: #5FBEBE;
+  box-shadow: inset 0px 0px 1px 2px #44a6a6;
+}
+/* line 55, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(3):focus, .grid-items .grid-item:nth-child(3):hover {
+  background-color: #44a6a6;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 50, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(4) {
+  background-color: #98C79A;
+  box-shadow: inset 0px 0px 1px 2px #77b57a;
+}
+/* line 55, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(4):focus, .grid-items .grid-item:nth-child(4):hover {
+  background-color: #77b57a;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 50, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(5) {
+  background-color: #A7A891;
+  box-shadow: inset 0px 0px 1px 2px #909175;
+}
+/* line 55, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(5):focus, .grid-items .grid-item:nth-child(5):hover {
+  background-color: #909175;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 50, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(6) {
+  background-color: #BDCC97;
+  box-shadow: inset 0px 0px 1px 2px #a7bb75;
+}
+/* line 55, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(6):focus, .grid-items .grid-item:nth-child(6):hover {
+  background-color: #a7bb75;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 50, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(7) {
+  background-color: #979EA0;
+  box-shadow: inset 0px 0px 1px 2px #7c8588;
+}
+/* line 55, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item:nth-child(7):focus, .grid-items .grid-item:nth-child(7):hover {
+  background-color: #7c8588;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 66, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item img {
+  display: block;
+  height: auto;
+  margin-bottom: 1em;
+  margin: auto;
+}
+/* line 73, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item h1 {
+  color: white;
+  font-size: 5em;
+  margin-bottom: 0.4em;
+}
+/* line 79, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item p {
+  line-height: 1.5em;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (min-width: 40em) {
+  /* line 79, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+  .grid-items .grid-item p {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 53.75em) {
+  /* line 89, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+  .grid-items .grid-item-big {
+    width: 66.66667%;
+  }
+}
+@media screen and (min-width: 40em) {
+  /* line 93, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+  .grid-items .grid-item-big p {
+    max-width: 60%;
+  }
+}
+/* line 100, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/griditem.scss */
+.grid-items .grid-item-image {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 1, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/scroll.scss */
+.scroll-on-page {
+  display: inline-block;
+}
+/* line 12, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/scroll.scss */
+.scroll-on-page a {
+  color: #477dca;
+  text-decoration: none;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 17, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/scroll.scss */
+  .scroll-on-page aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  /* line 89, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .scroll-on-page aside:last-child {
+    margin-right: 0;
+  }
+}
+/* line 23, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/scroll.scss */
+.scroll-on-page .scroll-on-page-link {
+  border-bottom: 1px solid rgba(71, 125, 202, 0.2);
+  display: block;
+  margin-right: 1.5em;
+  outline: none;
+  padding: 0.75em 0;
+}
+/* line 30, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/scroll.scss */
+.scroll-on-page .scroll-on-page-link:last-child {
+  margin-bottom: 1.5em;
+}
+/* line 36, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/scroll.scss */
+.scroll-on-page article h4 {
+  margin: 0 0 0.5em 0;
+}
+/* line 40, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/scroll.scss */
+.scroll-on-page article p {
+  color: #333;
+  line-height: 1.5;
+}
+/* line 45, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/scroll.scss */
+.scroll-on-page article section p:last-of-type {
+  margin-bottom: 2em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 35, /Users/ladannasserian/GA/workspace/projects/visual_you/app/assets/stylesheets/scroll.scss */
+  .scroll-on-page article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  /* line 89, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .scroll-on-page article:last-child {
+    margin-right: 0;
+  }
+}
