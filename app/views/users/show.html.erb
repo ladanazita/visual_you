@@ -1,27 +1,20 @@
-<h1> Welcome <%= current_user.name %> </h1>
-
-<h2> <%= link_to 'Create new', new_post_path %> Board </h2>
-  <section>
+<div class="grid-items">
+  <div class="grid-item grid-item-big"> <h1>Welcome <%= current_user.name %></h1></div>
+  <div class="grid-item"><h1><%= link_to 'Create new', new_post_path %> Board </h1></div>
     <% @posts.each do |post| %>
-      <aside>
-        <%= link_to 'Show', post_path(post) %>
-        <%= link_to 'Edit', edit_post_path(post) %>
-        <% if current_user || current_user.admin? %>
-        <%= link_to 'Destroy', post_path(post),
-                method: :delete,
-                data: {confirm: 'Are you sure?'} %>
-        <%end%>
-      </aside>
-      <aside>
-        <%= render @post.comments %>
-      </aside>
-      <article>
+    <div class="grid-item-image">
+      <div>
         <%= post.title %>
         <%= image_tag post.picture.url if post.picture? %>
-      </article>
+      </div>
+      <%= link_to 'Show', post_path(post) %>
+      <%= link_to 'Edit', edit_post_path(post) %>
+      <% if current_user || current_user.admin? %>
+        <%= link_to 'Destroy', post_path(post),
+              method: :delete,
+              data: {confirm: 'Are you sure?'} %>
+      <%end%>
+    </div>
     <% end %>
-  </section>
-
-  <%= link_to 'New Post', new_post_path %>
-
-
+  </div>
+</div>
